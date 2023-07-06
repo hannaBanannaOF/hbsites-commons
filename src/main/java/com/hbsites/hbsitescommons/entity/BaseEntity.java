@@ -1,11 +1,14 @@
 package com.hbsites.hbsitescommons.entity;
 
+import com.hbsites.hbsitescommons.interfaces.EventProducerInterface;
 import lombok.Data;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+
 import java.time.LocalDateTime;
 
 @Data

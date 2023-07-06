@@ -4,19 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serial;
 import java.io.Serializable;
+import java.util.List;
 import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessionSheetDTO implements Serializable {
-
-    @Serial
-    private static final long serialVersionUID = 1L;
-
-
-    private UUID uuid;
-    private String characterName;
+public class SessionBasicInfoDTO implements Serializable {
+    private UUID coreId;
+    private String sessionName;
+    private boolean inPlay;
+    private List<SessionSheetDTO> sessionSheets;
 }
