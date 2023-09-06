@@ -18,14 +18,12 @@ public abstract class SessionListingDTO<SESSIONENTITY> implements Serializable {
     private String sessionName;
     private ETRPGSystem system;
     private boolean inPlay;
-    private List<String> players;
 
     public void populate(UUID uuid, String sessionName, ETRPGSystem system, boolean inPlay, List<String> players) {
         this.setUuid(uuid);
         this.setSessionName(sessionName);
         this.setSystem(system);
         this.setInPlay(inPlay);
-        this.setPlayers(players);
     }
 
     public abstract SESSIONENTITY toEntity();

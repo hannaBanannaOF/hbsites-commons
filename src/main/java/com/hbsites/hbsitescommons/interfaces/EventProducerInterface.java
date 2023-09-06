@@ -3,8 +3,8 @@ package com.hbsites.hbsitescommons.interfaces;
 import java.util.List;
 import java.util.UUID;
 
-public interface EventProducerInterface<T> {
+public interface EventProducerInterface {
 
-    public T getFromRabbitMQ(List<UUID> uuids);
+    public void getFromRabbitMQ(List<UUID> uuids, UUID session, UUID characterSheet);
 
 }

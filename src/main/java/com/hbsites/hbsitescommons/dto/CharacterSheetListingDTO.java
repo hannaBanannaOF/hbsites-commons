@@ -21,5 +21,4 @@ public class CharacterSheetListingDTO<SESSIONENTITY> implements Serializable {
     private String characterName;
     private ETRPGSystem system;
     private SessionListingDTO<SESSIONENTITY> session;
-    private String userName;
 }

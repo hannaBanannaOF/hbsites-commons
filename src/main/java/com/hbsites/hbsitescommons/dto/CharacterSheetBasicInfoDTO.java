@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.UUID;
 
 @Data
 @AllArgsConstructor
@@ -16,5 +17,6 @@ public class CharacterSheetBasicInfoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     String characterName;
-    UserDTO player;
+    UUID sheetId;
+    UUID playerId;
 }
