@@ -12,6 +12,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SessionBasicInfoDTO implements Serializable {
+    private UUID dmId;
     private UUID coreId;
     private String sessionName;
     private boolean inPlay;

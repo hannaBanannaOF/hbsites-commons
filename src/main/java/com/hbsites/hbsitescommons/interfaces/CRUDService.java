@@ -1,10 +1,10 @@
 package com.hbsites.hbsitescommons.interfaces;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
 
 public interface CRUDService<IDCLASS, DTO, CREATEDTO, DETAILDTO> {
 
-    List<DTO> getAll();
+    Page<DTO> getAll(int page);
     DETAILDTO create(CREATEDTO dto);
 
     void deleteById(IDCLASS id);
