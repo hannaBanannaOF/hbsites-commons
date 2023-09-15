@@ -11,6 +11,7 @@
 	<groupId>com.hbsites</groupId>
 	<artifactId>hbsites-commons</artifactId>
 	<version>1.0.0</version>
+	<packaging>jar</packaging>
 	<name>hbsites-commons</name>
 	<description>Commons</description>
 	<properties>
@@ -53,5 +54,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>repsy-hbsites</id>
+			<name>HBSites - Repsy</name>
+			<url>https://repo.repsy.io/mvn/hannabananna/hbsites</url>
+		</repository>
+	</distributionManagement>
 
 </project>
