@@ -1,5 +1,6 @@
 package com.hbsites.hbsitescommons.commons.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serial;
@@ -7,6 +8,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 @Data
+@Builder
 public class UserDTO implements Serializable {
 
     @Serial

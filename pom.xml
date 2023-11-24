@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.hbsites</groupId>
 	<artifactId>hbsites-commons</artifactId>
-	<version>1.2.2</version>
+	<version>1.2.4</version>
 	<packaging>jar</packaging>
 	<name>hbsites-commons</name>
 	<description>Commons</description>
